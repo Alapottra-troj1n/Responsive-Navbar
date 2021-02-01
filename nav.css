@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(39, 39, 39);
+
+   
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;   /*3 items LOGO (img) NAV(inclues 3 anchor links or list inside nav) and Anchor(CTA) hire me one  */
+    align-items: center;
+    padding: 30px 10px;
+    
+}
+
+.logo{
+
+    cursor: pointer;
+    width: 60px;
+    margin: 0px 20px;
+     
+}
+
+.nav__links{
+    list-style-type: none;
+    
+}
+.nav__links li{
+    display: inline-block; /* so that three links in middle item gets --- instead of upwards */
+    padding: 0px 20px;
+}
+
+
+
+/* ----- PLACEMENT DONE HERE NOW STYLING BELOW ----------  */
+
+
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.nav__links li a:hover{
+    color: rgb(3, 192, 3);
+}
+
+button{
+    padding: 9px 20px;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    color: rgb(3, 192, 3);
+
+
+}
+
+@media screen and (max-width: 600px ){
+    header{
+        flex-direction: column;
+    }
+
+    .nav__links{
+        display: flex;
+     
+        
+        padding: 20px;
+    }
+
+    .nav__links li {
+        padding: 20px;
+        
+}
+
+}
